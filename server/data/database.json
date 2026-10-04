@@ -1,0 +1,1065 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_01",
+      "name": "Elena Rostova",
+      "email": "admin@aethelgard.com",
+      "phone": "+91 98201 11000",
+      "passwordHash": "$2b$10$zKHboLi6XnhkoygYmoRmeuL5BEzJxUuR6O.keL3mGUnwrcLjq2Nra",
+      "role": "admin",
+      "isVerified": true,
+      "isActive": true,
+      "addresses": [],
+      "savedPaymentMethods": [],
+      "createdAt": "2026-01-10T09:00:00.000Z",
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    },
+    {
+      "id": "usr_cust_01",
+      "name": "Arjun Mehta",
+      "email": "arjun.mehta@example.com",
+      "phone": "+91 98112 44556",
+      "passwordHash": "$2b$10$KuY5cuOHtS0hlCwaO7iJpuJ6sv45MH//mjbLNaM1EB9mkC7HafSsK",
+      "role": "customer",
+      "isVerified": true,
+      "isActive": true,
+      "addresses": [
+        {
+          "id": "addr_01",
+          "name": "Arjun Mehta",
+          "phone": "+91 98112 44556",
+          "house": "Residence 14B, The Camellias",
+          "street": "Golf Course Road",
+          "area": "DLF Phase 5, Sector 42",
+          "city": "Gurugram",
+          "state": "Haryana",
+          "pincode": "122009",
+          "type": "Home",
+          "isDefault": true
+        },
+        {
+          "id": "addr_02",
+          "name": "Arjun Mehta",
+          "phone": "+91 98112 44556",
+          "house": "Suite 804, One BKC Tower A",
+          "street": "G Block",
+          "area": "Bandra Kurla Complex",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "pincode": "400051",
+          "type": "Work",
+          "isDefault": false
+        }
+      ],
+      "savedPaymentMethods": [
+        {
+          "id": "pm_01",
+          "type": "Card",
+          "provider": "Visa Infinite",
+          "label": "HDFC Infinia Metal •••• 4829",
+          "last4": "4829",
+          "expiryMonth": "09",
+          "expiryYear": "2029",
+          "tokenReference": "tok_sandbox_visa_4829",
+          "isDefault": true
+        },
+        {
+          "id": "pm_02",
+          "type": "UPI",
+          "provider": "UPI Instant",
+          "label": "arjun.mehta@okhdfcbank",
+          "upiHandle": "arjun.mehta@okhdfcbank",
+          "tokenReference": "tok_sandbox_upi_arjun",
+          "isDefault": false
+        }
+      ],
+      "createdAt": "2026-02-14T11:30:00.000Z",
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_furniture",
+      "name": "Architectural Living",
+      "slug": "architectural-living",
+      "description": "Sculptural seating, solid timber furniture, and precision architectural lighting crafted for timeless interiors.",
+      "subcategories": [
+        "Lounge Seating",
+        "Architectural Lighting",
+        "Acoustic Tables"
+      ],
+      "image": "/src/assets/images/product_lounge_chair_1791099680126.jpg",
+      "isActive": true,
+      "createdAt": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "cat_audio",
+      "name": "Precision Audio & Desk",
+      "slug": "precision-audio-desk",
+      "description": "Reference-grade planar headphones, CNC-machined mechanical input instruments, and studio acoustics.",
+      "subcategories": [
+        "Reference Headphones",
+        "Mechanical Keyboards",
+        "DAC & Amplification"
+      ],
+      "image": "/src/assets/images/product_planar_headphones_1791099657423.jpg",
+      "isActive": true,
+      "createdAt": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "cat_horology",
+      "name": "Horology & Carry",
+      "slug": "horology-carry",
+      "description": "Grade-5 titanium mechanical chronographs and weatherproof ballistic technical luggage.",
+      "subcategories": [
+        "Mechanical Watches",
+        "Technical Backpacks",
+        "Field Instruments"
+      ],
+      "image": "/src/assets/images/product_chronograph_watch_1791099646368.jpg",
+      "isActive": true,
+      "createdAt": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "cat_culinary",
+      "name": "Culinary Architecture",
+      "slug": "culinary-architecture",
+      "description": "Dual-boiler commercial-grade lever espresso machines and thermal-mass brewing instruments.",
+      "subcategories": [
+        "Espresso Machines",
+        "Manual Brewers",
+        "Grinders"
+      ],
+      "image": "/src/assets/images/product_espresso_machine_1791099669398.jpg",
+      "isActive": true,
+      "createdAt": "2026-01-10T09:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_01",
+      "name": "Krono Calibre 09 Titanium Chronograph",
+      "slug": "krono-calibre-09-titanium-chronograph",
+      "shortDescription": "Grade-5 brushed titanium column-wheel mechanical chronograph with anti-reflective box sapphire crystal.",
+      "description": "Engineered for collectors who value legibility and mechanical integrity. The Calibre 09 houses an in-house automatic column-wheel movement beating at 28,800 vph with a 68-hour power reserve. Cased in Grade-5 micro-blasted titanium with a slate sunray dial and Super-LumiNova indices.",
+      "category": "Horology & Carry",
+      "categorySlug": "horology-carry",
+      "subcategory": "Mechanical Watches",
+      "brand": "Krono Geneve",
+      "sku": "KR-CAL09-TI40",
+      "price": 184000,
+      "originalPrice": 210000,
+      "discountPercent": 12,
+      "stock": 14,
+      "images": [
+        {
+          "url": "/src/assets/images/product_chronograph_watch_1791099646368.jpg",
+          "publicId": "aethelgard/products/krono_chronograph_main",
+          "alt": "Krono Calibre 09 Titanium Chronograph Watch",
+          "isMain": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_prod01_1",
+          "sku": "KR-CAL09-TI40-SLATE",
+          "size": "40mm Case",
+          "color": "Slate Dial / Titanium Bracelet",
+          "finish": "Brushed Grade-5 Titanium",
+          "price": 184000,
+          "originalPrice": 210000,
+          "stock": 9,
+          "isAvailable": true
+        },
+        {
+          "id": "var_prod01_2",
+          "sku": "KR-CAL09-TI38-OBSIDIAN",
+          "size": "38mm Case",
+          "color": "Obsidian Dial / FKM Rubber Strap",
+          "finish": "Bead-Blasted Titanium",
+          "price": 172000,
+          "originalPrice": 198000,
+          "stock": 5,
+          "isAvailable": true
+        }
+      ],
+      "specifications": {
+        "Movement": "Calibre K09 Automatic Column-Wheel Chronograph",
+        "Power Reserve": "68 Hours",
+        "Case Material": "Grade-5 Titanium (Ti-6Al-4V)",
+        "Water Resistance": "100 Meters / 10 ATM",
+        "Crystal": "Domed Box Sapphire with Dual AR Coating",
+        "Case Diameter": "40.0 mm (Lug-to-Lug 47.2 mm)"
+      },
+      "attributes": {
+        "material": "Grade-5 Titanium",
+        "origin": "Geneva, Switzerland",
+        "warranty": "5 Years International Warranty",
+        "weight": "84g"
+      },
+      "ratingSummary": {
+        "average": 4.9,
+        "count": 18,
+        "distribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 2,
+          "5": 16
+        }
+      },
+      "isFeatured": true,
+      "isTrending": true,
+      "isNewArrival": false,
+      "isDeal": true,
+      "isActive": true,
+      "createdAt": "2026-01-15T10:00:00.000Z",
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    },
+    {
+      "id": "prod_02",
+      "name": "Audeze Reference Planar Studio Headphones",
+      "slug": "audeze-reference-planar-studio-headphones",
+      "shortDescription": "Open-back 106mm planar magnetic transducers housed in CNC-machined aluminum and kiln-dried American walnut.",
+      "description": "Designed for mastering engineers and discerning listeners. The Reference Planar employs ultra-thin nanoscale diaphragms suspended in a Fluxor neodymium magnet array, delivering zero-distortion transient response from 5Hz to 50kHz. Perforated lambskin earpads and a suspended spring-steel headband ensure effortless comfort across multi-hour listening sessions.",
+      "category": "Precision Audio & Desk",
+      "categorySlug": "precision-audio-desk",
+      "subcategory": "Reference Headphones",
+      "brand": "Sonora Acoustics",
+      "sku": "SN-REF-PLN106",
+      "price": 89500,
+      "originalPrice": 98000,
+      "discountPercent": 9,
+      "stock": 22,
+      "images": [
+        {
+          "url": "/src/assets/images/product_planar_headphones_1791099657423.jpg",
+          "publicId": "aethelgard/products/planar_headphones_main",
+          "alt": "Audeze Reference Planar Studio Headphones",
+          "isMain": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_prod02_1",
+          "sku": "SN-REF-PLN106-WAL",
+          "color": "Natural Walnut / Matte Aluminum",
+          "capacity": "Balanced 4.4mm + XLR Braided Cable",
+          "price": 89500,
+          "originalPrice": 98000,
+          "stock": 15,
+          "isAvailable": true
+        },
+        {
+          "id": "var_prod02_2",
+          "sku": "SN-REF-PLN106-EBONY",
+          "color": "Smoked Ebony / Anodized Black",
+          "capacity": "Studio Pro OCC Silver Cable Set",
+          "price": 96000,
+          "originalPrice": 105000,
+          "stock": 7,
+          "isAvailable": true
+        }
+      ],
+      "specifications": {
+        "Transducer Type": "106mm Open-Back Planar Magnetic",
+        "Frequency Response": "5 Hz – 50,000 Hz",
+        "Impedance": "32 Ohms (Nominal)",
+        "Sensitivity": "101 dB / 1mW",
+        "Total Harmonic Distortion": "< 0.08% @ 1kHz, 100dB SPL",
+        "Enclosure": "Kiln-Dried Walnut & 6061-T6 Aluminum"
+      },
+      "attributes": {
+        "material": "Walnut & CNC Aluminum",
+        "origin": "Copenhagen, Denmark",
+        "warranty": "3 Years Transducer & Chassis Warranty",
+        "weight": "435g"
+      },
+      "ratingSummary": {
+        "average": 4.8,
+        "count": 29,
+        "distribution": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 3,
+          "5": 25
+        }
+      },
+      "isFeatured": true,
+      "isTrending": true,
+      "isNewArrival": true,
+      "isDeal": false,
+      "isActive": true,
+      "createdAt": "2026-01-20T10:00:00.000Z",
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    },
+    {
+      "id": "prod_03",
+      "name": "Valenza Dual-Boiler Lever Espresso System",
+      "slug": "valenza-dual-boiler-lever-espresso-system",
+      "shortDescription": "PID-stabilized saturated commercial group head with solid walnut tactile actuators and rotary vane pump.",
+      "description": "Bridging commercial Italian extraction acoustics with domestic architectural form. The Valenza features independent 316L stainless steel brew and steam boilers, digital PID thermal profiling accurate to ±0.1°C, and a whisper-quiet rotary vane pump allowing both direct plumb-in and internal reservoir operation.",
+      "category": "Culinary Architecture",
+      "categorySlug": "culinary-architecture",
+      "subcategory": "Espresso Machines",
+      "brand": "Valenza Milano",
+      "sku": "VL-DB-LVR01",
+      "price": 245000,
+      "originalPrice": 275000,
+      "discountPercent": 11,
+      "stock": 8,
+      "images": [
+        {
+          "url": "/src/assets/images/product_espresso_machine_1791099669398.jpg",
+          "publicId": "aethelgard/products/valenza_espresso_main",
+          "alt": "Valenza Dual-Boiler Lever Espresso System",
+          "isMain": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_prod03_1",
+          "sku": "VL-DB-LVR01-SS",
+          "color": "Brushed 304 Stainless / American Walnut",
+          "capacity": "2.8L Reservoir + Direct Plumb Kit",
+          "price": 245000,
+          "originalPrice": 275000,
+          "stock": 5,
+          "isAvailable": true
+        },
+        {
+          "id": "var_prod03_2",
+          "sku": "VL-DB-LVR01-BLK",
+          "color": "Matte Basalt Powdercoat / Olive Wood",
+          "capacity": "2.8L Reservoir + Direct Plumb Kit",
+          "price": 254000,
+          "originalPrice": 285000,
+          "stock": 3,
+          "isAvailable": true
+        }
+      ],
+      "specifications": {
+        "Boiler Configuration": "Dual 316L Stainless Steel (0.8L Brew + 2.0L Steam)",
+        "Pump Architecture": "Commercial Rotary Vane (9 Bar Calibrated)",
+        "Thermal Control": "Multi-Sensor PID with Shot Timer",
+        "Portafilter Diameter": "58mm Commercial Stainless Steel",
+        "Power Consumption": "220-240V / 2100W",
+        "Dimensions": "340mm W × 450mm D × 395mm H"
+      },
+      "attributes": {
+        "material": "316L Stainless Steel & Walnut",
+        "origin": "Milan, Italy",
+        "warranty": "3 Years On-Site Parts & Labor",
+        "weight": "29.5kg"
+      },
+      "ratingSummary": {
+        "average": 5,
+        "count": 11,
+        "distribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 11
+        }
+      },
+      "isFeatured": true,
+      "isTrending": false,
+      "isNewArrival": true,
+      "isDeal": true,
+      "isActive": true,
+      "createdAt": "2026-02-01T10:00:00.000Z",
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    },
+    {
+      "id": "prod_04",
+      "name": "Soren Molded Walnut & Aniline Leather Lounge Chair",
+      "slug": "soren-molded-walnut-aniline-leather-lounge-chair",
+      "shortDescription": "Architectural low-slung lounge chair in steam-bent 9-ply walnut veneer and vegetable-tanned cognac saddle leather.",
+      "description": "Conceived as a permanent anchor for quiet reading rooms and modern living spaces. Each Soren shell is press-molded from FSC-certified American black walnut veneer, hand-rubbed with natural linseed oil, and upholstered in full-grain Scandinavian aniline leather that develops a rich amber patina over decades of use.",
+      "category": "Architectural Living",
+      "categorySlug": "architectural-living",
+      "subcategory": "Lounge Seating",
+      "brand": "Aethelgard Living",
+      "sku": "AG-SRN-LNG04",
+      "price": 138000,
+      "originalPrice": 155000,
+      "discountPercent": 11,
+      "stock": 11,
+      "images": [
+        {
+          "url": "/src/assets/images/product_lounge_chair_1791099680126.jpg",
+          "publicId": "aethelgard/products/soren_lounge_chair_main",
+          "alt": "Soren Molded Walnut and Aniline Leather Lounge Chair",
+          "isMain": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_prod04_1",
+          "sku": "AG-SRN-LNG04-COG",
+          "color": "Oiled Walnut / Cognac Aniline Leather",
+          "size": "Standard Lounge (78cm W × 82cm D)",
+          "price": 138000,
+          "originalPrice": 155000,
+          "stock": 7,
+          "isAvailable": true
+        },
+        {
+          "id": "var_prod04_2",
+          "sku": "AG-SRN-LNG04-ESP",
+          "color": "Smoked Oak / Espresso Saddle Leather",
+          "size": "Standard Lounge + Matching Ottoman",
+          "price": 169000,
+          "originalPrice": 190000,
+          "stock": 4,
+          "isAvailable": true
+        }
+      ],
+      "specifications": {
+        "Shell Construction": "9-Ply Steam-Bent FSC American Walnut",
+        "Upholstery": "Full-Grain Vegetable-Tanned Aniline Leather",
+        "Cushion Core": "High-Resilience Dual-Density Cold Cure Foam",
+        "Base": "Die-Cast Brushed Bronze 4-Star Swivel",
+        "Seat Height": "405 mm",
+        "Dimensions": "780mm W × 820mm D × 810mm H"
+      },
+      "attributes": {
+        "material": "Walnut Veneer & Aniline Leather",
+        "origin": "Aarhus, Denmark",
+        "warranty": "10 Years Structural Frame Warranty",
+        "weight": "24kg"
+      },
+      "ratingSummary": {
+        "average": 4.9,
+        "count": 14,
+        "distribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 13
+        }
+      },
+      "isFeatured": true,
+      "isTrending": true,
+      "isNewArrival": false,
+      "isDeal": false,
+      "isActive": true,
+      "createdAt": "2026-02-05T10:00:00.000Z",
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    },
+    {
+      "id": "prod_05",
+      "name": "atelier-01 Cantilevered Bronze Task Luminaire",
+      "slug": "atelier-01-cantilevered-bronze-task-luminaire",
+      "shortDescription": "Counter-balanced anodized architectural bronze LED task lamp with CRI 98+ warm-dimming optical diffuser.",
+      "description": "Machined from solid extruded aluminum and finished in brushed architectural bronze. The atelier-01 uses an internal tungsten counterweight system for effortless one-finger articulation without exposed springs. Features a high-color-rendering CRI 98+ LED array with continuous rotary dimming from 2200K candlelit warmth to 4000K studio daylight.",
+      "category": "Architectural Living",
+      "categorySlug": "architectural-living",
+      "subcategory": "Architectural Lighting",
+      "brand": "Aethelgard Living",
+      "sku": "AG-LUM-AT01",
+      "price": 34500,
+      "originalPrice": 39000,
+      "discountPercent": 12,
+      "stock": 28,
+      "images": [
+        {
+          "url": "/src/assets/images/product_desk_lamp_1791099692192.jpg",
+          "publicId": "aethelgard/products/atelier_desk_lamp_main",
+          "alt": "atelier-01 Cantilevered Bronze Task Luminaire",
+          "isMain": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_prod05_1",
+          "sku": "AG-LUM-AT01-BRZ",
+          "color": "Brushed Architectural Bronze",
+          "size": "Freestanding Weighted Base",
+          "price": 34500,
+          "originalPrice": 39000,
+          "stock": 19,
+          "isAvailable": true
+        },
+        {
+          "id": "var_prod05_2",
+          "sku": "AG-LUM-AT01-SLV",
+          "color": "Raw Bead-Blasted Titanium Silver",
+          "size": "Freestanding Weighted Base",
+          "price": 34500,
+          "originalPrice": 39000,
+          "stock": 9,
+          "isAvailable": true
+        }
+      ],
+      "specifications": {
+        "Color Rendering Index": "CRI 98+ (R9 > 95)",
+        "Color Temperature": "2200K – 4000K Stepless Tactile Dial",
+        "Luminous Flux": "850 Lumens (Glare-Free Micro-Prismatic Lens)",
+        "Chassis": "CNC-Machined 6063 Aluminum & Solid Brass Counterweight",
+        "Cord Material": "2.4m Woven Charcoal Textile Cable",
+        "LED Lifespan": "50,000+ Hours Rated"
+      },
+      "attributes": {
+        "material": "Anodized Bronze Aluminum",
+        "origin": "Munich, Germany",
+        "warranty": "5 Years Luminaire Warranty",
+        "weight": "3.8kg"
+      },
+      "ratingSummary": {
+        "average": 4.7,
+        "count": 23,
+        "distribution": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 4,
+          "5": 18
+        }
+      },
+      "isFeatured": false,
+      "isTrending": true,
+      "isNewArrival": true,
+      "isDeal": false,
+      "isActive": true,
+      "createdAt": "2026-02-12T10:00:00.000Z",
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    },
+    {
+      "id": "prod_06",
+      "name": "Monolith 65% CNC Aluminum Mechanical Keyboard",
+      "slug": "monolith-65-cnc-aluminum-mechanical-keyboard",
+      "shortDescription": "Gasket-mounted 65% input instrument milled from a solid billet of 6063 aluminum with sandblasted brass weight.",
+      "description": "Engineered for tactile precision and acoustic purity. The Monolith 65% utilizes an isolated poron gasket mount system paired with a polycarbonate switch plate and factory-lubed linear POM switches. Weighted with a 1.4kg solid sandblasted brass baseplate and topped with thick dye-sublimated PBT keycaps.",
+      "category": "Precision Audio & Desk",
+      "categorySlug": "precision-audio-desk",
+      "subcategory": "Mechanical Keyboards",
+      "brand": "KBD Atelier",
+      "sku": "KB-MNL65-ALU",
+      "price": 38900,
+      "originalPrice": 44000,
+      "discountPercent": 12,
+      "stock": 19,
+      "images": [
+        {
+          "url": "/src/assets/images/product_mechanical_keyboard_1791099704325.jpg",
+          "publicId": "aethelgard/products/monolith_keyboard_main",
+          "alt": "Monolith 65% CNC Aluminum Mechanical Keyboard",
+          "isMain": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_prod06_1",
+          "sku": "KB-MNL65-SLATE-LIN",
+          "color": "Anodized Slate Gray / Brass Weight",
+          "capacity": "Linear 58g Factory-Lubed Switches",
+          "price": 38900,
+          "originalPrice": 44000,
+          "stock": 12,
+          "isAvailable": true
+        },
+        {
+          "id": "var_prod06_2",
+          "sku": "KB-MNL65-SLATE-TAC",
+          "color": "Anodized Slate Gray / Brass Weight",
+          "capacity": "Tactile 62g Boba U4T Switches",
+          "price": 40500,
+          "originalPrice": 46000,
+          "stock": 7,
+          "isAvailable": true
+        }
+      ],
+      "specifications": {
+        "Layout": "65% ANSI Compact (67 Keys)",
+        "Mounting Style": "Isolated Poron Gasket Mount",
+        "Case Material": "CNC-Machined 6063 Aluminum + Solid Brass Weight",
+        "Typing Angle": "6.5 Degrees Ergonomic Slope",
+        "Firmware": "QMK / VIA Programmable over USB-C & Tri-Mode Wireless",
+        "Keycaps": "1.6mm Thick Matte PBT Cherry Profile"
+      },
+      "attributes": {
+        "material": "6063 CNC Aluminum & Brass",
+        "origin": "Tokyo, Japan",
+        "warranty": "2 Years Hardware Warranty",
+        "weight": "2.65kg"
+      },
+      "ratingSummary": {
+        "average": 4.9,
+        "count": 34,
+        "distribution": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 31
+        }
+      },
+      "isFeatured": true,
+      "isTrending": true,
+      "isNewArrival": true,
+      "isDeal": true,
+      "isActive": true,
+      "createdAt": "2026-02-18T10:00:00.000Z",
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    },
+    {
+      "id": "prod_07",
+      "name": "Nomad 28L Ballistic & Dyneema Transit Pack",
+      "slug": "nomad-28l-ballistic-dyneema-transit-pack",
+      "shortDescription": "Weatherproof 1680D Cordura ballistic nylon and carbon-matrix everyday transit pack with suspended 16\" laptop vault.",
+      "description": "Built to withstand transcontinental travel without sacrificing architectural poise. Constructed from military-spec 1680D Cordura ballistic nylon laminated with waterproof X-Pac sails and YKK AquaGuard zippers. Features a false-bottom suspended 16-inch laptop compartment, magnetic Fidlock sternum hardware, and lay-flat clamshell access.",
+      "category": "Horology & Carry",
+      "categorySlug": "horology-carry",
+      "subcategory": "Technical Backpacks",
+      "brand": "Vanguard Carry",
+      "sku": "VG-NMD-28L",
+      "price": 26500,
+      "originalPrice": 29900,
+      "discountPercent": 11,
+      "stock": 4,
+      "images": [
+        {
+          "url": "/src/assets/images/product_travel_backpack_1791099716928.jpg",
+          "publicId": "aethelgard/products/nomad_backpack_main",
+          "alt": "Nomad 28L Ballistic and Dyneema Transit Pack",
+          "isMain": true
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_prod07_1",
+          "sku": "VG-NMD-28L-BLK",
+          "color": "Obsidian 1680D Ballistic",
+          "capacity": "28 Liters (Cabin Approved)",
+          "price": 26500,
+          "originalPrice": 29900,
+          "stock": 3,
+          "isAvailable": true
+        },
+        {
+          "id": "var_prod07_2",
+          "sku": "VG-NMD-28L-DYN",
+          "color": "Stealth Carbon Dyneema Composite",
+          "capacity": "32 Liters (Extended Weekender)",
+          "price": 31500,
+          "originalPrice": 35000,
+          "stock": 1,
+          "isAvailable": true
+        }
+      ],
+      "specifications": {
+        "Primary Shell": "1680D Cordura Ballistic Nylon (DWR Coated)",
+        "Weather Sealing": "YKK #10 AquaGuard Urethane Zippers",
+        "Laptop Protection": "Suspended High-Density EVA Vault (Up to 16\" MacBook Pro)",
+        "Hardware": "Anodized Aluminum & Magnetic Fidlock V-Buckles",
+        "Volume": "28 Liters",
+        "Dimensions": "490mm H × 310mm W × 185mm D"
+      },
+      "attributes": {
+        "material": "1680D Ballistic Nylon & Dyneema",
+        "origin": "Zurich, Switzerland",
+        "warranty": "Lifetime Craftsmanship Guarantee",
+        "weight": "1.42kg"
+      },
+      "ratingSummary": {
+        "average": 4.8,
+        "count": 19,
+        "distribution": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 2,
+          "5": 16
+        }
+      },
+      "isFeatured": false,
+      "isTrending": false,
+      "isNewArrival": true,
+      "isDeal": true,
+      "isActive": true,
+      "createdAt": "2026-02-22T10:00:00.000Z",
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    }
+  ],
+  "carts": [
+    {
+      "id": "cart_cust_01",
+      "userId": "usr_cust_01",
+      "items": [
+        {
+          "id": "ci_01",
+          "productId": "prod_01",
+          "variantId": "var_prod01_1",
+          "quantity": 1,
+          "savedForLater": false,
+          "addedAt": "2026-10-04T08:04:14.726Z"
+        }
+      ],
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    }
+  ],
+  "wishlists": [
+    {
+      "id": "wish_cust_01",
+      "userId": "usr_cust_01",
+      "productIds": [
+        "prod_03",
+        "prod_04"
+      ],
+      "updatedAt": "2026-10-04T08:04:14.726Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "cpn_01",
+      "code": "ATELIER10",
+      "description": "10% privilege savings on architectural living & precision instruments (up to ₹15,000)",
+      "discountType": "percentage",
+      "discountValue": 10,
+      "minPurchase": 25000,
+      "maxDiscount": 15000,
+      "usageLimit": 500,
+      "usedCount": 42,
+      "expiresAt": "2027-12-31T23:59:59.000Z",
+      "isActive": true,
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "cpn_02",
+      "code": "PRIVATE5000",
+      "description": "Flat ₹5,000 collector reduction on orders above ₹75,000",
+      "discountType": "flat",
+      "discountValue": 5000,
+      "minPurchase": 75000,
+      "maxDiscount": 5000,
+      "usageLimit": 200,
+      "usedCount": 18,
+      "expiresAt": "2027-12-31T23:59:59.000Z",
+      "isActive": true,
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "cpn_03",
+      "code": "ARCHIVED2024",
+      "description": "Expired archival promotion code for validation testing",
+      "discountType": "percentage",
+      "discountValue": 20,
+      "minPurchase": 10000,
+      "maxDiscount": 10000,
+      "usageLimit": 100,
+      "usedCount": 100,
+      "expiresAt": "2024-12-31T23:59:59.000Z",
+      "isActive": false,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_1001",
+      "orderNumber": "AG-2026-1042",
+      "invoiceNumber": "INV-AG-2026-1042",
+      "userId": "usr_cust_01",
+      "customerName": "Arjun Mehta",
+      "customerEmail": "arjun.mehta@example.com",
+      "customerPhone": "+91 98112 44556",
+      "items": [
+        {
+          "productId": "prod_02",
+          "productName": "Audeze Reference Planar Studio Headphones",
+          "productSlug": "audeze-reference-planar-studio-headphones",
+          "productImage": "/src/assets/images/product_planar_headphones_1791099657423.jpg",
+          "brand": "Sonora Acoustics",
+          "variantId": "var_prod02_1",
+          "variantLabel": "Natural Walnut / Matte Aluminum · Balanced 4.4mm + XLR Braided Cable",
+          "sku": "SN-REF-PLN106-WAL",
+          "quantity": 1,
+          "unitPrice": 89500,
+          "originalUnitPrice": 98000,
+          "lineSubtotal": 98000,
+          "lineDiscount": 8500,
+          "lineTotal": 89500
+        },
+        {
+          "productId": "prod_05",
+          "productName": "atelier-01 Cantilevered Bronze Task Luminaire",
+          "productSlug": "atelier-01-cantilevered-bronze-task-luminaire",
+          "productImage": "/src/assets/images/product_desk_lamp_1791099692192.jpg",
+          "brand": "Aethelgard Living",
+          "variantId": "var_prod05_1",
+          "variantLabel": "Brushed Architectural Bronze · Freestanding Weighted Base",
+          "sku": "AG-LUM-AT01-BRZ",
+          "quantity": 1,
+          "unitPrice": 34500,
+          "originalUnitPrice": 39000,
+          "lineSubtotal": 39000,
+          "lineDiscount": 4500,
+          "lineTotal": 34500
+        }
+      ],
+      "pricing": {
+        "subtotal": 137000,
+        "productDiscount": 13000,
+        "couponCode": "PRIVATE5000",
+        "couponDiscount": 5000,
+        "deliveryMethod": "Standard",
+        "deliveryFee": 0,
+        "taxRate": 18,
+        "taxAmount": 21420,
+        "finalTotal": 140420
+      },
+      "shippingAddress": {
+        "id": "addr_01",
+        "name": "Arjun Mehta",
+        "phone": "+91 98112 44556",
+        "house": "Residence 14B, The Camellias",
+        "street": "Golf Course Road",
+        "area": "DLF Phase 5, Sector 42",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "pincode": "122009",
+        "type": "Home",
+        "isDefault": true
+      },
+      "paymentMethod": "Card",
+      "paymentStatus": "Paid",
+      "paymentId": "pay_sandbox_9918273",
+      "providerOrderId": "order_sandbox_8827162",
+      "orderStatus": "Delivered",
+      "timeline": [
+        {
+          "status": "Pending",
+          "note": "Order received and stock reserved in Gurugram fulfillment vault.",
+          "timestamp": "2026-09-12T10:15:00.000Z",
+          "updatedBy": "System"
+        },
+        {
+          "status": "Confirmed",
+          "note": "Payment verified via HMAC-SHA256 gateway signature.",
+          "timestamp": "2026-09-12T10:16:12.000Z",
+          "updatedBy": "Payment Gateway"
+        },
+        {
+          "status": "Processing",
+          "note": "Quality inspection and acoustic calibration sheet completed.",
+          "timestamp": "2026-09-13T08:40:00.000Z",
+          "updatedBy": "Elena Rostova (Admin)"
+        },
+        {
+          "status": "Shipped",
+          "note": "Dispatched via BlueDart White-Glove Air Priority (AWB #BD90817263).",
+          "timestamp": "2026-09-14T14:20:00.000Z",
+          "updatedBy": "Logistics Hub"
+        },
+        {
+          "status": "Delivered",
+          "note": "Handed over to resident with signature verification.",
+          "timestamp": "2026-09-16T16:05:00.000Z",
+          "updatedBy": "Courier Partner"
+        }
+      ],
+      "createdAt": "2026-09-12T10:15:00.000Z",
+      "updatedAt": "2026-09-16T16:05:00.000Z"
+    },
+    {
+      "id": "ord_1002",
+      "orderNumber": "AG-2026-1089",
+      "invoiceNumber": "INV-AG-2026-1089",
+      "userId": "usr_cust_01",
+      "customerName": "Arjun Mehta",
+      "customerEmail": "arjun.mehta@example.com",
+      "customerPhone": "+91 98112 44556",
+      "items": [
+        {
+          "productId": "prod_06",
+          "productName": "Monolith 65% CNC Aluminum Mechanical Keyboard",
+          "productSlug": "monolith-65-cnc-aluminum-mechanical-keyboard",
+          "productImage": "/src/assets/images/product_mechanical_keyboard_1791099704325.jpg",
+          "brand": "KBD Atelier",
+          "variantId": "var_prod06_1",
+          "variantLabel": "Anodized Slate Gray / Brass Weight · Linear 58g Factory-Lubed Switches",
+          "sku": "KB-MNL65-SLATE-LIN",
+          "quantity": 1,
+          "unitPrice": 38900,
+          "originalUnitPrice": 44000,
+          "lineSubtotal": 44000,
+          "lineDiscount": 5100,
+          "lineTotal": 38900
+        }
+      ],
+      "pricing": {
+        "subtotal": 44000,
+        "productDiscount": 5100,
+        "couponCode": "ATELIER10",
+        "couponDiscount": 3890,
+        "deliveryMethod": "Express",
+        "deliveryFee": 950,
+        "taxRate": 18,
+        "taxAmount": 6301.8,
+        "finalTotal": 42261.8
+      },
+      "shippingAddress": {
+        "id": "addr_02",
+        "name": "Arjun Mehta",
+        "phone": "+91 98112 44556",
+        "house": "Suite 804, One BKC Tower A",
+        "street": "G Block",
+        "area": "Bandra Kurla Complex",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400051",
+        "type": "Work",
+        "isDefault": false
+      },
+      "paymentMethod": "UPI",
+      "paymentStatus": "Paid",
+      "paymentId": "pay_sandbox_9954102",
+      "providerOrderId": "order_sandbox_8890114",
+      "orderStatus": "Processing",
+      "timeline": [
+        {
+          "status": "Pending",
+          "note": "Order placed via Checkout.",
+          "timestamp": "2026-10-02T11:20:00.000Z",
+          "updatedBy": "System"
+        },
+        {
+          "status": "Confirmed",
+          "note": "UPI transaction verified on backend.",
+          "timestamp": "2026-10-02T11:21:05.000Z",
+          "updatedBy": "Payment Gateway"
+        },
+        {
+          "status": "Processing",
+          "note": "Preparing serialized brass weight inspection prior to dispatch.",
+          "timestamp": "2026-10-03T09:30:00.000Z",
+          "updatedBy": "Elena Rostova (Admin)"
+        }
+      ],
+      "createdAt": "2026-10-02T11:20:00.000Z",
+      "updatedAt": "2026-10-03T09:30:00.000Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_sandbox_9918273",
+      "orderId": "ord_1001",
+      "userId": "usr_cust_01",
+      "providerOrderId": "order_sandbox_8827162",
+      "providerPaymentId": "pay_sandbox_9918273",
+      "signature": "sig_verified_hmac_8827162",
+      "amount": 140420,
+      "currency": "INR",
+      "method": "Card",
+      "status": "Paid",
+      "createdAt": "2026-09-12T10:16:12.000Z",
+      "updatedAt": "2026-09-12T10:16:12.000Z"
+    },
+    {
+      "id": "pay_sandbox_9954102",
+      "orderId": "ord_1002",
+      "userId": "usr_cust_01",
+      "providerOrderId": "order_sandbox_8890114",
+      "providerPaymentId": "pay_sandbox_9954102",
+      "signature": "sig_verified_hmac_8890114",
+      "amount": 42261.8,
+      "currency": "INR",
+      "method": "UPI",
+      "status": "Paid",
+      "createdAt": "2026-10-02T11:21:05.000Z",
+      "updatedAt": "2026-10-02T11:21:05.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_01",
+      "productId": "prod_02",
+      "userId": "usr_cust_01",
+      "userName": "Arjun Mehta",
+      "rating": 5,
+      "title": "Sublime sub-bass extension and zero listening fatigue",
+      "comment": "Paired these with a Class-A discrete headphone amplifier over balanced 4.4mm. The walnut cups and machined aluminum yokes feel like a piece of Swiss horology, and the transient separation on orchestral recordings is unmatched.",
+      "photos": [],
+      "verifiedPurchase": true,
+      "createdAt": "2026-09-20T14:22:00.000Z",
+      "updatedAt": "2026-09-20T14:22:00.000Z"
+    },
+    {
+      "id": "rev_02",
+      "productId": "prod_01",
+      "userId": "usr_cust_99",
+      "userName": "Vikramaditya Rao",
+      "rating": 5,
+      "title": "Column-wheel pusher feel is crisp and authoritative",
+      "comment": "At 84 grams on the wrist, the Grade-5 titanium wears effortlessly under a cuff while maintaining serious architectural presence. Timekeeping has been within +1.2 seconds per day.",
+      "photos": [],
+      "verifiedPurchase": true,
+      "createdAt": "2026-08-18T09:10:00.000Z",
+      "updatedAt": "2026-08-18T09:10:00.000Z"
+    },
+    {
+      "id": "rev_03",
+      "productId": "prod_05",
+      "userId": "usr_cust_01",
+      "userName": "Arjun Mehta",
+      "rating": 5,
+      "title": "CRI 98+ optical diffuser transforms late-night reading",
+      "comment": "The internal counterweight glides with zero friction and stays exactly where positioned. The warm 2200K setting has zero flicker.",
+      "photos": [],
+      "verifiedPurchase": true,
+      "createdAt": "2026-09-21T19:05:00.000Z",
+      "updatedAt": "2026-09-21T19:05:00.000Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "productId": "prod_01",
+      "productName": "Krono Calibre 09 Titanium Chronograph",
+      "userId": "usr_cust_01",
+      "userName": "Arjun Mehta",
+      "question": "Does the titanium bracelet include tool-less micro-adjustment in the clasp for summer wrist expansion?",
+      "answer": "Yes. The Grade-5 titanium deployant clasp features an integrated 5-position push-button micro-extension offering up to 6mm of on-the-fly adjustment without tools.",
+      "answeredBy": "Elena Rostova — Head Horologist",
+      "answeredAt": "2026-09-10T15:30:00.000Z",
+      "createdAt": "2026-09-09T18:12:00.000Z"
+    },
+    {
+      "id": "q_02",
+      "productId": "prod_03",
+      "productName": "Valenza Dual-Boiler Lever Espresso System",
+      "userId": "usr_cust_01",
+      "userName": "Arjun Mehta",
+      "question": "Can the steam boiler be independently disabled when pulling single-origin espresso shots only?",
+      "answer": "Yes, the front PID controller features an Eco Brew-Only mode that powers only the 0.8L 316L brew boiler, bringing warm-up time down to 6 minutes.",
+      "answeredBy": "Elena Rostova — Technical Specialist",
+      "answeredAt": "2026-09-25T11:45:00.000Z",
+      "createdAt": "2026-09-24T16:20:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_01",
+      "userId": "usr_cust_01",
+      "type": "order",
+      "title": "Order #AG-2026-1089 in Processing",
+      "message": "Your Monolith 65% CNC Aluminum Mechanical Keyboard is undergoing final quality inspection.",
+      "link": "/orders/ord_1002",
+      "isRead": false,
+      "createdAt": "2026-10-03T09:30:00.000Z"
+    },
+    {
+      "id": "notif_02",
+      "userId": "admin",
+      "type": "operational",
+      "title": "Low Stock Alert: Nomad 28L Transit Pack",
+      "message": "Variant VG-NMD-28L-DYN has only 1 unit remaining in inventory.",
+      "link": "/admin/products",
+      "isRead": false,
+      "createdAt": "2026-10-03T12:00:00.000Z"
+    }
+  ]
+}

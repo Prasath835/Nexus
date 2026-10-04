@@ -1,0 +1,6 @@
+{
+  "name": "Aethelgard Atelier — Full-Stack E-Commerce Platform",
+  "description": "Production-grade full-stack e-commerce platform for architectural furniture, precision horology, studio audio, and technical everyday carry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
